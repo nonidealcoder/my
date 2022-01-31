@@ -1,0 +1,291 @@
+@charset "UTF-8";
+/*Обнуление*/
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: 400;
+}
+
+/*--------------------------------------------------*/
+@media (max-width: 1200px) {
+  .container {
+    max-width: 970px;
+  }
+}
+@media (max-width: 992px) {
+  .container {
+    max-width: 750px;
+  }
+}
+@media (max-width: 1200px) {
+  .container {
+    max-width: none;
+  }
+}
+.wrapper {
+  min-height: 100%;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1125px;
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #2627a2;
+  height: 108px;
+}
+
+.header__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.header__text {
+  font-family: "Shadows Into Light";
+  padding-top: 15px;
+  font-size: 72px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2.8px;
+  color: #fffefe;
+}
+
+.header__link {
+  width: 100px;
+  height: 100px;
+  background: url("../image/inss.png") 50% no-repeat;
+}
+
+.main__text {
+  height: 567px;
+  background: #dcdcdc;
+}
+
+.main__column {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 184px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.text__title {
+  font-family: "Pacifico";
+  font-size: 60px;
+  line-height: 60px;
+  font-weight: 400;
+  text-transform: lowercase;
+  letter-spacing: 0.2em;
+  color: #000000;
+  margin-bottom: 50px;
+}
+
+.text__text {
+  font-family: "Pacifico";
+  font-size: 30px;
+  line-height: 40px;
+  text-transform: lowercase;
+  color: #000000;
+}
+
+.main__foto {
+  height: 790px;
+  background-color: #a0a0a0;
+}
+
+.main__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 69px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.main__foto1 {
+  background: url("../image/svob.png") 50% no-repeat;
+  width: 520px;
+  height: 666px;
+  -webkit-box-shadow: 0px 0px 27px 13px rgba(0, 0, 0, 0.58);
+          box-shadow: 0px 0px 27px 13px rgba(0, 0, 0, 0.58);
+}
+.main__foto1:hover {
+  -webkit-box-shadow: 0px 0px 27px 13px rgba(7, 207, 233, 0.61);
+          box-shadow: 0px 0px 27px 13px rgba(7, 207, 233, 0.61);
+}
+
+.main__foto2 {
+  background: url("../image/stat.png") 50% no-repeat;
+  width: 500px;
+  height: 666px;
+  -webkit-box-shadow: 0px 0px 27px 13px rgba(0, 0, 0, 0.58);
+          box-shadow: 0px 0px 27px 13px rgba(0, 0, 0, 0.58);
+}
+.main__foto2:hover {
+  -webkit-box-shadow: 0px 0px 27px 13px rgba(7, 207, 233, 0.61);
+          box-shadow: 0px 0px 27px 13px rgba(7, 207, 233, 0.61);
+}
+
+.main_inst {
+  height: 300px;
+  background-color: #dcdcdc;
+}
+
+.inst__column {
+  padding-top: 55px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.link {
+  margin-left: 60px;
+  padding: 10px 60px;
+  font-family: "Shadows Into Light";
+  font-size: 30px;
+  line-height: 40px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #000000;
+  background: url("../image/123123.png") left no-repeat;
+}
+
+.al:hover {
+  color: #c60d7b;
+  text-transform: lowercase;
+}
+
+.reg:hover {
+  color: #c60d7b;
+  text-transform: lowercase;
+}
+
+.dob:hover {
+  color: #c60d7b;
+  text-transform: lowercase;
+}
+
+.main__foto3 {
+  background: url("../image/glas.jpg") 50% no-repeat;
+  width: 622px;
+  height: 564px;
+  -webkit-box-shadow: 0px 0px 27px 13px rgba(0, 0, 0, 0.58);
+          box-shadow: 0px 0px 27px 13px rgba(0, 0, 0, 0.58);
+}
+.main__foto3:hover {
+  -webkit-box-shadow: 0px 0px 27px 13px rgba(7, 207, 233, 0.61);
+          box-shadow: 0px 0px 27px 13px rgba(7, 207, 233, 0.61);
+}
+
+.main__foto4 {
+  background: url("../image/ja.jpg") 50% no-repeat;
+  width: 423px;
+  height: 564px;
+  -webkit-box-shadow: 0px 0px 27px 13px rgba(0, 0, 0, 0.58);
+          box-shadow: 0px 0px 27px 13px rgba(0, 0, 0, 0.58);
+}
+.main__foto4:hover {
+  -webkit-box-shadow: 0px 0px 27px 13px rgba(7, 207, 233, 0.61);
+          box-shadow: 0px 0px 27px 13px rgba(7, 207, 233, 0.61);
+}

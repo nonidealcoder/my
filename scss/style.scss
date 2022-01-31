@@ -1,0 +1,192 @@
+//Файл обнуления
+@import "nullstyle.scss";
+@import url("https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+//создает функцию
+@mixin fontz($f) {
+    font-size: $f;
+}
+//Шаблон
+%tplborder {
+    background: url("../image/check.png") left no-repeat;
+    padding-left: 30px;
+    font-size: 24px;
+    line-height: 36px;
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: 970px;
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        max-width: 750px;
+    }
+}
+@media (max-width: 1200px) {
+    .container {
+        max-width: none;
+    }
+}
+@media all {
+    //print
+    //screen
+    //speech
+    //all
+    //orientation:portrait(landscale перевернутый)
+    //resolution:300dpi
+    //monochrome
+    //max-width
+    //max-height
+}
+
+.wrapper {
+    min-height: 100%;
+}
+.content {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.container {
+    max-width: 1125px;
+    margin: 0 auto;
+}
+.header {
+    background-color: #2627a2;
+    height: 108px;
+}
+.header__row {
+    display: flex;
+    flex: 1 1 auto;
+    justify-content: center;
+    justify-content: space-around;
+}
+.header__text {
+    font-family: "Shadows Into Light";
+    padding-top: 15px;
+    font-size: 72px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2.8px;
+    color: #fffefe;
+}
+.header__link {
+    width: 100px;
+    height: 100px;
+    background: url("../image/inss.png") 50% no-repeat;
+}
+.main {
+}
+.main__text {
+    height: 567px;
+    background: #dcdcdc;
+}
+.main__column {
+    display: flex;
+    flex-direction: column;
+    padding: 184px;
+
+    justify-content: center;
+    text-align: center;
+}
+.text__title {
+    font-family: "Pacifico";
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 400;
+    text-transform: lowercase;
+    letter-spacing: 0.2em;
+    color: #000000;
+    margin-bottom: 50px;
+}
+.text__text {
+    font-family: "Pacifico";
+    font-size: 30px;
+    line-height: 40px;
+
+    text-transform: lowercase;
+
+    color: #000000;
+}
+.main__foto {
+    height: 790px;
+    background-color: #a0a0a0;
+}
+.main__row {
+    display: flex;
+    justify-content: center;
+    padding-top: 69px;
+    justify-content: space-around;
+}
+.main__foto1 {
+    background: url("../image/svob.png") 50% no-repeat;
+    width: 520px;
+    height: 666px;
+    box-shadow: 0px 0px 27px 13px rgba(0, 0, 0, 0.58);
+    &:hover{
+        box-shadow: 0px 0px 27px 13px rgba(7, 207, 233, 0.61);
+    }
+}
+.main__foto2 {
+    background: url("../image/stat.png") 50% no-repeat;
+    width: 500px;
+    height: 666px;
+    box-shadow: 0px 0px 27px 13px rgba(0, 0, 0, 0.58);
+    &:hover{
+        box-shadow: 0px 0px 27px 13px rgba(7, 207, 233, 0.61);
+    }
+}
+
+.main_inst {
+    height: 300px;
+    background-color: #dcdcdc;
+}
+.inst__column {
+    padding-top: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.link {
+    margin-left: 60px;
+    padding: 10px 60px;
+    font-family: "Shadows Into Light";
+    font-size: 30px;
+    line-height: 40px;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #000000;
+    background: url("../image/123123.png") left no-repeat;
+}
+.al:hover {
+    color: #c60d7b;
+    text-transform: lowercase;
+}
+.reg:hover {
+    color: #c60d7b;
+    text-transform: lowercase;
+}
+.dob:hover {
+    color: #c60d7b;
+    text-transform: lowercase;
+}
+.main__foto3 {
+    
+    background: url("../image/glas.jpg") 50% no-repeat;
+    width: 622px;
+    height: 564px;
+    box-shadow: 0px 0px 27px 13px rgba(0, 0, 0, 0.58);
+    &:hover{
+        box-shadow: 0px 0px 27px 13px rgba(7, 207, 233, 0.61);
+    }
+}
+.main__foto4 {
+    background: url("../image/ja.jpg") 50% no-repeat;
+    width: 423px;
+    height: 564px;
+    box-shadow: 0px 0px 27px 13px rgba(0, 0, 0, 0.58);
+    &:hover{
+        box-shadow: 0px 0px 27px 13px rgba(7, 207, 233, 0.61);
+    }
+}
